@@ -21,86 +21,70 @@
    <layout class="QGridLayout" name="gridLayout_2">
     <item row="1" column="0">
      <layout class="QGridLayout" name="gridLayout">
-      <item row="3" column="4">
-       <widget class="Line" name="line_7">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QTextEdit" name="textEdit_2"/>
-      </item>
-      <item row="1" column="6">
-       <widget class="QTextEdit" name="textEdit"/>
-      </item>
-      <item row="2" column="0">
-       <widget class="Line" name="line_4">
-        <property name="styleSheet">
-         <string notr="true">background-color:yellow;</string>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-      </item>
       <item row="5" column="6">
-       <widget class="QTextEdit" name="textEdit_3"/>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QProgressBar" name="progressBar_3">
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QProgressBar {
+	 border:1px solid lightgreen;
+     color:purple;
+ }
+
+ QProgressBar::chunk {
+     background-color: #00FF00;
+ }</string>
+          </property>
+          <property name="value">
+           <number>50</number>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QProgressBar" name="progressBar_4">
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QProgressBar {
+	 border:1px solid red;
+     color:white;
+ }
+
+ QProgressBar::chunk {
+     background-color: red;
+ }
+</string>
+          </property>
+          <property name="value">
+           <number>24</number>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
-      <item row="5" column="3">
-       <widget class="QPlainTextEdit" name="plainTextEdit">
+      <item row="1" column="1">
+       <widget class="Line" name="line_5">
         <property name="styleSheet">
-         <string notr="true">color:yellow; align-text:center;</string>
-        </property>
-        <property name="plainText">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="3">
-       <spacer name="verticalSpacer">
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>20</width>
-          <height>40</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="3" column="1">
-       <widget class="Line" name="line_9">
-        <property name="styleSheet">
-         <string notr="true">background:yellow;</string>
+         <string notr="true">c</string>
         </property>
         <property name="orientation">
          <enum>Qt::Vertical</enum>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="5">
-       <widget class="Line" name="line_10">
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="2">
-       <widget class="Line" name="line_12">
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="3">
-       <widget class="Line" name="line_13">
-        <property name="styleSheet">
-         <string notr="true">b</string>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
         </property>
        </widget>
       </item>
@@ -114,25 +98,229 @@
         </property>
        </widget>
       </item>
-      <item row="5" column="0">
-       <widget class="QTextEdit" name="textEdit_5"/>
+      <item row="3" column="4">
+       <widget class="Line" name="line_7">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
       </item>
-      <item row="2" column="6">
-       <widget class="Line" name="line_3">
+      <item row="5" column="1">
+       <widget class="Line" name="line_15">
         <property name="styleSheet">
-         <string notr="true">background-color:yellow;</string>
+         <string notr="true">background:yellow</string>
         </property>
         <property name="orientation">
-         <enum>Qt::Horizontal</enum>
+         <enum>Qt::Vertical</enum>
         </property>
        </widget>
       </item>
-      <item row="1" column="4">
-       <widget class="Line" name="line_6">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
+      <item row="5" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <property name="spacing">
+         <number>0</number>
         </property>
-       </widget>
+        <item>
+         <widget class="QLabel" name="label_9">
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:white;</string>
+          </property>
+          <property name="text">
+           <string>Coolant Temp 80C</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_10">
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:white;</string>
+          </property>
+          <property name="text">
+           <string>Oil Temp 100C</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_11">
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:white;</string>
+          </property>
+          <property name="text">
+           <string>Air Temp 31C</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <widget class="QTextEdit" name="textEdit_2"/>
+      </item>
+      <item row="3" column="0">
+       <layout class="QGridLayout" name="gridLayout_4" rowminimumheight="0,0" columnminimumwidth="0,0,0,0,0">
+        <property name="horizontalSpacing">
+         <number>3</number>
+        </property>
+        <property name="verticalSpacing">
+         <number>0</number>
+        </property>
+        <item row="1" column="1">
+         <widget class="QProgressBar" name="progressBar">
+          <property name="styleSheet">
+           <string notr="true">QProgressBar {
+	 border:1px solid white;
+
+ }
+
+ QProgressBar::chunk {
+     background-color: white;
+ } color:white;</string>
+          </property>
+          <property name="value">
+           <number>25</number>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+          </property>
+          <property name="textVisible">
+           <bool>true</bool>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_8">
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>13</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:white; </string>
+          </property>
+          <property name="text">
+           <string>Fuel</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="Line" name="line_8">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="average_mpg">
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+            <property name="text">
+             <string>25 Mpg Average</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="current_mpg">
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+            <property name="text">
+             <string>15 Mpg Current</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="range">
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+            <property name="text">
+             <string>75 Range</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="gallons">
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+            <property name="text">
+             <string>5 Gallons</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="ethanol">
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+            <property name="text">
+             <string>15% Ethanol</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
       </item>
       <item row="3" column="3">
        <layout class="QVBoxLayout" name="verticalLayout">
@@ -232,87 +420,85 @@
         </item>
        </layout>
       </item>
-      <item row="3" column="0">
-       <layout class="QGridLayout" name="gridLayout_4">
-        <item row="1" column="0">
-         <widget class="QProgressBar" name="progressBar">
-          <property name="styleSheet">
-           <string notr="true">QProgressBar {
-	 border:1px solid white;
-
- }
-
- QProgressBar::chunk {
-     background-color: white;
- }</string>
-          </property>
-          <property name="value">
-           <number>24</number>
-          </property>
-          <property name="textVisible">
-           <bool>false</bool>
-          </property>
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="2">
-         <spacer name="verticalSpacer_3">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="0" column="1">
-         <widget class="QLabel" name="label_8">
-          <property name="font">
-           <font>
-            <family>Segoe UI</family>
-            <pointsize>13</pointsize>
-           </font>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">color:white; </string>
-          </property>
-          <property name="text">
-           <string>Fuel</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="1">
-         <spacer name="horizontalSpacer">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>40</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="1" column="3">
-         <widget class="Line" name="line_8">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-         </widget>
-        </item>
-       </layout>
+      <item row="5" column="5">
+       <widget class="Line" name="line_14">
+        <property name="styleSheet">
+         <string notr="true">background:yellow</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
       </item>
-      <item row="4" column="0">
-       <widget class="Line" name="line_2">
+      <item row="1" column="4">
+       <widget class="Line" name="line_6">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="3" column="1">
+       <widget class="Line" name="line_9">
+        <property name="styleSheet">
+         <string notr="true">background:yellow;</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="5">
+       <widget class="Line" name="line_10">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="Line" name="line_4">
+        <property name="styleSheet">
+         <string notr="true">background-color:yellow;</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="5">
+       <widget class="Line" name="line_11">
+        <property name="styleSheet">
+         <string notr="true">background:yellow;</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="Line" name="line_12">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="6">
+       <widget class="QTextEdit" name="textEdit"/>
+      </item>
+      <item row="2" column="6">
+       <widget class="Line" name="line_3">
         <property name="styleSheet">
          <string notr="true">background-color:yellow;</string>
         </property>
@@ -431,23 +617,33 @@
         </item>
        </layout>
       </item>
-      <item row="3" column="5">
-       <widget class="Line" name="line_11">
+      <item row="4" column="0">
+       <widget class="Line" name="line_2">
         <property name="styleSheet">
-         <string notr="true">background:yellow;</string>
+         <string notr="true">background-color:yellow;</string>
         </property>
         <property name="orientation">
-         <enum>Qt::Vertical</enum>
+         <enum>Qt::Horizontal</enum>
         </property>
        </widget>
       </item>
-      <item row="1" column="1">
-       <widget class="Line" name="line_5">
+      <item row="2" column="3">
+       <widget class="Line" name="line_13">
         <property name="styleSheet">
-         <string notr="true">c</string>
+         <string notr="true">b</string>
         </property>
         <property name="orientation">
-         <enum>Qt::Vertical</enum>
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="3">
+       <widget class="QPlainTextEdit" name="plainTextEdit">
+        <property name="styleSheet">
+         <string notr="true">color:yellow; align-text:center;</string>
+        </property>
+        <property name="plainText">
+         <string/>
         </property>
        </widget>
       </item>
@@ -466,10 +662,16 @@
  }</string>
       </property>
       <property name="value">
-       <number>100</number>
+       <number>99</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
       </property>
       <property name="textVisible">
        <bool>false</bool>
+      </property>
+      <property name="format">
+       <string>%pk rpm</string>
       </property>
      </widget>
     </item>
