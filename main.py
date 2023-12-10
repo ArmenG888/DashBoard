@@ -36,7 +36,7 @@ class Main(QtWidgets.QMainWindow):
 	def updateInfo(self):
 		gear = 'N'
 		speed,rpm = 0,0
-		tires_temp = [0,0,0,0]
+		tires_temp,tire_pressures = [0,0,0,0],[0,0,0,0]
 		last_update_time = 0
 		update_interval = 0.1
 
@@ -66,11 +66,16 @@ class Main(QtWidgets.QMainWindow):
 							rpm = data.get('rpm')
 						if data.get('tiresTemp') is not None and data.get('tiresTemp') != tires_temp:
 							tiresTemp = data.get('tiresTemp')
-							self.ui.frontLeftTemp.setText(f"{tiresTemp[0]:.0f}")
-							self.ui.frontRightTemp.setText(f"{tiresTemp[1]:.0f}")
-							self.ui.rearLeftTemp.setText(f"{tiresTemp[2]:.0f}")
-							self.ui.rearRightTemp.setText(f"{tiresTemp[3]:.0f}")
-
+							self.ui.frontLeftTemp.setText(f"{tiresTemp[0]:.0f}°C")
+							self.ui.frontRightTemp.setText(f"{tiresTemp[1]:.0f}°C")
+							self.ui.rearLeftTemp.setText(f"{tiresTemp[2]:.0f}°C")
+							self.ui.rearRightTemp.setText(f"{tiresTemp[3]:.0f}°C")
+						if data.get('tiresPressures') is not None and data.get('tiresPressures') != tire_pressures:
+							tire_pressures = data.get('tiresPressures')
+							self.ui.frontLeftPressure.setText(f"{tire_pressures[0]:.0f} psi")
+							self.ui.frontRightPressure.setText(f"{tire_pressures[1]:.0f} psi")
+							self.ui.rearLeftPressure.setText(f"{tire_pressures[2]:.0f} psi")
+							self.ui.rearRightPressure.setText(f"{tire_pressures[3]:.0f} psi")
 						self.ui.gear.setText(str(gear))
 						self.ui.speed.setText(f"{speed:.0f}")
 						self.ui.rpm.setText(f"{rpm:.0f}")
