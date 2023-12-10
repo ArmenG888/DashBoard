@@ -10,7 +10,7 @@ url = "http://192.168.1.2:8000/items/"
 class Main(QtWidgets.QMainWindow):
 	update_throttle_progress_bar = QtCore.Signal(float)
 	update_brake_progress_bar = QtCore.Signal(float)
-
+	update_rpm_progress_bar = QtCore.Signal(float)
 	def __init__(self):
 		super(Main, self).__init__()
 		self.ui = Ui_MainWindow()
@@ -69,7 +69,7 @@ class Main(QtWidgets.QMainWindow):
 							rpm = data.get('rpm')
 							if rpm>max_rpm:
 								max_rpm = rpm
-							self.update_rpm_progress_bar.emit((rpm/max_rpm))
+							self.update_rpm_progress_bar.emit(float(rpm/max_rpm)*100)
 
 						if data.get('tiresTemp') is not None and data.get('tiresTemp') != tires_temp:
 							tiresTemp = data.get('tiresTemp')
