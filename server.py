@@ -1,7 +1,7 @@
 # simple fast api app
 
 from fastapi import FastAPI
-
+import json
 app = FastAPI()
 
 
@@ -14,6 +14,6 @@ def read_root():
 @app.get("/items/")
 def read_item():
     with open("test.txt", "r") as r:
-    	throttle = r.read()
-    return {'thorttle':throttle}
+    	data = json.load(r)
+    return data
 
