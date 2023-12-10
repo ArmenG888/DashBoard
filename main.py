@@ -21,6 +21,7 @@ class Main(QtWidgets.QMainWindow):
 
 		self.update_throttle_progress_bar.connect(self.setThrottleProgressBarValue)
 		self.update_brake_progress_bar.connect(self.setBrakeProgressBarValue)
+		self.update_rpm_progress_bar.connect(self.setRpmProgressBarValue)
 
 		self.info_thread = threading.Thread(target=self.updateInfo, daemon=True)
 		self.info_thread.start()
@@ -32,13 +33,15 @@ class Main(QtWidgets.QMainWindow):
 
 	def setBrakeProgressBarValue(self, value):
 		self.ui.progressBar_4.setValue(value)  # Assuming progressBar_4 is for the brake
-
+	def setRpmProgressBarValue(self, value):
+		self.ui.progressBar_2.setValue(value)
 	def updateInfo(self):
 		gear = 'N'
 		speed,rpm = 0,0
 		tires_temp,tire_pressures = [0,0,0,0],[0,0,0,0]
 		last_update_time = 0
 		update_interval = 0.1
+		max_rpm = 7000
 
 		while True:
 			current_time = time.time()
@@ -51,7 +54,7 @@ class Main(QtWidgets.QMainWindow):
 							throttle = float(data.get('throttle', 0)) * 100
 							brake = float(data.get('brake', 0)) * 100
 							self.update_throttle_progress_bar.emit(throttle)
-							self.update_brake_progress_bar.emit(brake)                       
+							self.update_brake_progress_bar.emit(brake)                   
 						except ValueError:
 							pass
 						if data.get('gear') is not None and data.get('gear') != gear:
@@ -64,6 +67,10 @@ class Main(QtWidgets.QMainWindow):
 							speed = data.get('speed')
 						if data.get('rpm') is not None and data.get('rpm') != rpm:
 							rpm = data.get('rpm')
+							if rpm>max_rpm:
+								max_rpm = rpm
+							self.update_rpm_progress_bar.emit((rpm/max_rpm))
+
 						if data.get('tiresTemp') is not None and data.get('tiresTemp') != tires_temp:
 							tiresTemp = data.get('tiresTemp')
 							self.ui.frontLeftTemp.setText(f"{tiresTemp[0]:.0f}°C")
