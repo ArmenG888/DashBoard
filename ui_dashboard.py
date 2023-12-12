@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'dashboardrxPxyy.ui'
+## Form generated from reading UI file 'dashboardHlCntj.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -56,7 +56,7 @@ class Ui_MainWindow(object):
         self.rpm.setObjectName(u"rpm")
         font = QFont()
         font.setFamily(u"Segoe UI")
-        font.setPointSize(24)
+        font.setPointSize(30)
         self.rpm.setFont(font)
         self.rpm.setStyleSheet(u"color:white;")
         self.rpm.setAlignment(Qt.AlignCenter)
@@ -67,7 +67,7 @@ class Ui_MainWindow(object):
         self.gear.setObjectName(u"gear")
         font1 = QFont()
         font1.setFamily(u"Segoe UI")
-        font1.setPointSize(66)
+        font1.setPointSize(74)
         self.gear.setFont(font1)
         self.gear.setStyleSheet(u"color:yellow; text-align: center;")
         self.gear.setLineWidth(0)
@@ -78,7 +78,7 @@ class Ui_MainWindow(object):
         self.speed = QLabel(self.centralwidget)
         self.speed.setObjectName(u"speed")
         font2 = QFont()
-        font2.setPointSize(24)
+        font2.setPointSize(28)
         self.speed.setFont(font2)
         self.speed.setStyleSheet(u"color:white;")
         self.speed.setAlignment(Qt.AlignCenter)
@@ -89,7 +89,7 @@ class Ui_MainWindow(object):
         self.label_3.setObjectName(u"label_3")
         font3 = QFont()
         font3.setFamily(u"Segoe UI")
-        font3.setPointSize(12)
+        font3.setPointSize(16)
         self.label_3.setFont(font3)
         self.label_3.setStyleSheet(u"color:yellow")
         self.label_3.setAlignment(Qt.AlignCenter)
@@ -124,7 +124,7 @@ class Ui_MainWindow(object):
         self.frontRightTemp.setObjectName(u"frontRightTemp")
         font4 = QFont()
         font4.setFamily(u"Segoe UI")
-        font4.setPointSize(23)
+        font4.setPointSize(25)
         self.frontRightTemp.setFont(font4)
         self.frontRightTemp.setStyleSheet(u"color:white;")
 
@@ -132,7 +132,10 @@ class Ui_MainWindow(object):
 
         self.rearLeftPressure = QLabel(self.centralwidget)
         self.rearLeftPressure.setObjectName(u"rearLeftPressure")
-        self.rearLeftPressure.setFont(font3)
+        font5 = QFont()
+        font5.setFamily(u"Segoe UI")
+        font5.setPointSize(15)
+        self.rearLeftPressure.setFont(font5)
         self.rearLeftPressure.setStyleSheet(u"color:white;")
         self.rearLeftPressure.setAlignment(Qt.AlignCenter)
 
@@ -158,7 +161,7 @@ class Ui_MainWindow(object):
 
         self.rearRightPressure = QLabel(self.centralwidget)
         self.rearRightPressure.setObjectName(u"rearRightPressure")
-        self.rearRightPressure.setFont(font3)
+        self.rearRightPressure.setFont(font5)
         self.rearRightPressure.setStyleSheet(u"color:white;")
         self.rearRightPressure.setAlignment(Qt.AlignCenter)
 
@@ -173,10 +176,10 @@ class Ui_MainWindow(object):
 
         self.label_7 = QLabel(self.centralwidget)
         self.label_7.setObjectName(u"label_7")
-        font5 = QFont()
-        font5.setFamily(u"Segoe UI")
-        font5.setPointSize(14)
-        self.label_7.setFont(font5)
+        font6 = QFont()
+        font6.setFamily(u"Segoe UI")
+        font6.setPointSize(14)
+        self.label_7.setFont(font6)
         self.label_7.setContextMenuPolicy(Qt.CustomContextMenu)
         self.label_7.setStyleSheet(u"color:white;")
         self.label_7.setAlignment(Qt.AlignCenter)
@@ -185,7 +188,7 @@ class Ui_MainWindow(object):
 
         self.frontLeftPressure = QLabel(self.centralwidget)
         self.frontLeftPressure.setObjectName(u"frontLeftPressure")
-        self.frontLeftPressure.setFont(font3)
+        self.frontLeftPressure.setFont(font5)
         self.frontLeftPressure.setStyleSheet(u"color:white;")
         self.frontLeftPressure.setAlignment(Qt.AlignCenter)
 
@@ -193,7 +196,7 @@ class Ui_MainWindow(object):
 
         self.frontRightPressure = QLabel(self.centralwidget)
         self.frontRightPressure.setObjectName(u"frontRightPressure")
-        self.frontRightPressure.setFont(font3)
+        self.frontRightPressure.setFont(font5)
         self.frontRightPressure.setStyleSheet(u"color:white;")
         self.frontRightPressure.setAlignment(Qt.AlignCenter)
 
@@ -258,7 +261,7 @@ class Ui_MainWindow(object):
 
         self.textEdit_2 = QTextEdit(self.centralwidget)
         self.textEdit_2.setObjectName(u"textEdit_2")
-        self.textEdit_2.setFont(font5)
+        self.textEdit_2.setFont(font6)
         self.textEdit_2.setStyleSheet(u"color:white; border: 1px solid white;")
         self.textEdit_2.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
         self.textEdit_2.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
@@ -272,24 +275,24 @@ class Ui_MainWindow(object):
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
         self.label_9 = QLabel(self.centralwidget)
         self.label_9.setObjectName(u"label_9")
-        font6 = QFont()
-        font6.setFamily(u"Segoe UI")
-        font6.setPointSize(11)
-        self.label_9.setFont(font6)
+        font7 = QFont()
+        font7.setFamily(u"Segoe UI")
+        font7.setPointSize(11)
+        self.label_9.setFont(font7)
         self.label_9.setStyleSheet(u"color:white;")
 
         self.verticalLayout_4.addWidget(self.label_9)
 
         self.label_10 = QLabel(self.centralwidget)
         self.label_10.setObjectName(u"label_10")
-        self.label_10.setFont(font6)
+        self.label_10.setFont(font7)
         self.label_10.setStyleSheet(u"color:white;")
 
         self.verticalLayout_4.addWidget(self.label_10)
 
         self.label_11 = QLabel(self.centralwidget)
         self.label_11.setObjectName(u"label_11")
-        self.label_11.setFont(font6)
+        self.label_11.setFont(font7)
         self.label_11.setStyleSheet(u"color:white;")
 
         self.verticalLayout_4.addWidget(self.label_11)
@@ -318,7 +321,7 @@ class Ui_MainWindow(object):
 
         self.textEdit = QTextEdit(self.centralwidget)
         self.textEdit.setObjectName(u"textEdit")
-        self.textEdit.setFont(font5)
+        self.textEdit.setFont(font6)
         self.textEdit.setStyleSheet(u"color:white; border: 1px solid white;")
         self.textEdit.setReadOnly(True)
 
@@ -352,10 +355,10 @@ class Ui_MainWindow(object):
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
         self.progressBar_3 = QProgressBar(self.centralwidget)
         self.progressBar_3.setObjectName(u"progressBar_3")
-        font7 = QFont()
-        font7.setFamily(u"Segoe UI")
-        font7.setPointSize(10)
-        self.progressBar_3.setFont(font7)
+        font8 = QFont()
+        font8.setFamily(u"Segoe UI")
+        font8.setPointSize(10)
+        self.progressBar_3.setFont(font8)
         self.progressBar_3.setStyleSheet(u"QProgressBar {\n"
 "	 border:1px solid lightgreen;\n"
 "     color:purple;\n"
@@ -371,7 +374,7 @@ class Ui_MainWindow(object):
 
         self.progressBar_4 = QProgressBar(self.centralwidget)
         self.progressBar_4.setObjectName(u"progressBar_4")
-        self.progressBar_4.setFont(font7)
+        self.progressBar_4.setFont(font8)
         self.progressBar_4.setStyleSheet(u"QProgressBar {\n"
 "	 border:1px solid red;\n"
 "     color:white;\n"
@@ -398,7 +401,10 @@ class Ui_MainWindow(object):
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.current_mpg = QLabel(self.centralwidget)
         self.current_mpg.setObjectName(u"current_mpg")
-        self.current_mpg.setFont(font3)
+        font9 = QFont()
+        font9.setFamily(u"Segoe UI")
+        font9.setPointSize(12)
+        self.current_mpg.setFont(font9)
         self.current_mpg.setStyleSheet(u"color:white;")
         self.current_mpg.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
 
@@ -406,7 +412,7 @@ class Ui_MainWindow(object):
 
         self.ethanol = QLabel(self.centralwidget)
         self.ethanol.setObjectName(u"ethanol")
-        self.ethanol.setFont(font3)
+        self.ethanol.setFont(font9)
         self.ethanol.setStyleSheet(u"color:white;")
         self.ethanol.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
 
@@ -427,10 +433,10 @@ class Ui_MainWindow(object):
 
         self.label = QLabel(self.centralwidget)
         self.label.setObjectName(u"label")
-        font8 = QFont()
-        font8.setFamily(u"Segoe UI")
-        font8.setPointSize(13)
-        self.label.setFont(font8)
+        font10 = QFont()
+        font10.setFamily(u"Segoe UI")
+        font10.setPointSize(13)
+        self.label.setFont(font10)
         self.label.setStyleSheet(u"color:white;")
         self.label.setAlignment(Qt.AlignCenter)
 
@@ -480,7 +486,7 @@ class Ui_MainWindow(object):
 
         self.label_8 = QLabel(self.centralwidget)
         self.label_8.setObjectName(u"label_8")
-        self.label_8.setFont(font8)
+        self.label_8.setFont(font10)
         self.label_8.setStyleSheet(u"color:white; ")
         self.label_8.setAlignment(Qt.AlignCenter)
 
@@ -490,7 +496,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_6.setObjectName(u"verticalLayout_6")
         self.fuel_left = QLabel(self.centralwidget)
         self.fuel_left.setObjectName(u"fuel_left")
-        self.fuel_left.setFont(font3)
+        self.fuel_left.setFont(font9)
         self.fuel_left.setStyleSheet(u"color:white;")
         self.fuel_left.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
@@ -498,7 +504,7 @@ class Ui_MainWindow(object):
 
         self.range_laps = QLabel(self.centralwidget)
         self.range_laps.setObjectName(u"range_laps")
-        self.range_laps.setFont(font3)
+        self.range_laps.setFont(font9)
         self.range_laps.setStyleSheet(u"color:white;")
         self.range_laps.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
@@ -506,7 +512,7 @@ class Ui_MainWindow(object):
 
         self.range = QLabel(self.centralwidget)
         self.range.setObjectName(u"range")
-        self.range.setFont(font3)
+        self.range.setFont(font9)
         self.range.setStyleSheet(u"color:white;")
         self.range.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
@@ -526,7 +532,7 @@ class Ui_MainWindow(object):
 
         self.plainTextEdit = QPlainTextEdit(self.centralwidget)
         self.plainTextEdit.setObjectName(u"plainTextEdit")
-        self.plainTextEdit.setFont(font5)
+        self.plainTextEdit.setFont(font6)
         self.plainTextEdit.setStyleSheet(u"color:white; border: 1px solid white;")
         self.plainTextEdit.setReadOnly(True)
 
