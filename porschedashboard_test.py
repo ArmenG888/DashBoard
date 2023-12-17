@@ -6,9 +6,8 @@ class Main(QtWidgets.QMainWindow):
 		super(Main, self).__init__()
 		self.ui = Ui_MainWindow()
 		self.ui.setupUi(self)
-		self.setWindowFlag(QtCore.Qt.FramelessWindowHint)
-		self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
-		self.showFullScreen()
+	
+		self.show()
 
 if __name__ == "__main__":
 	app = QtWidgets.QApplication(sys.argv)
