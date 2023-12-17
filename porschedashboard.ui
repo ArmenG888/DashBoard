@@ -74,6 +74,12 @@
            </property>
            <item>
             <widget class="QLabel" name="label_16">
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
              <property name="styleSheet">
               <string notr="true">color:white; background-color:#19353C;</string>
              </property>
@@ -87,6 +93,12 @@
            </item>
            <item>
             <widget class="QLabel" name="fuel_used">
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
              <property name="cursor">
               <cursorShape>CrossCursor</cursorShape>
              </property>
@@ -110,6 +122,12 @@
            </property>
            <item>
             <widget class="QLabel" name="label_19">
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
              <property name="styleSheet">
               <string notr="true">color:white; background-color:#19353C;</string>
              </property>
@@ -123,6 +141,12 @@
            </item>
            <item>
             <widget class="QLabel" name="fuelperlap">
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
              <property name="cursor">
               <cursorShape>CrossCursor</cursorShape>
              </property>
@@ -146,6 +170,12 @@
            </property>
            <item>
             <widget class="QLabel" name="label_20">
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
              <property name="styleSheet">
               <string notr="true">color:white; background-color:#19353C;</string>
              </property>
@@ -159,6 +189,12 @@
            </item>
            <item>
             <widget class="QLabel" name="fuelpress">
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
              <property name="cursor">
               <cursorShape>CrossCursor</cursorShape>
              </property>
@@ -182,6 +218,12 @@
            </property>
            <item>
             <widget class="QLabel" name="label_22">
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
              <property name="styleSheet">
               <string notr="true">color:white; background-color:#19353C;</string>
              </property>
@@ -195,6 +237,12 @@
            </item>
            <item>
             <widget class="QLabel" name="fuel_level">
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
              <property name="cursor">
               <cursorShape>CrossCursor</cursorShape>
              </property>
@@ -216,13 +264,15 @@
        <item>
         <layout class="QVBoxLayout" name="verticalLayout_15">
          <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="1,1">
            <item>
             <widget class="QLabel" name="label_3">
              <property name="font">
               <font>
                <family>Segoe UI</family>
-               <pointsize>12</pointsize>
+               <pointsize>14</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
               </font>
              </property>
              <property name="styleSheet">
@@ -241,7 +291,9 @@
              <property name="font">
               <font>
                <family>Segoe UI</family>
-               <pointsize>12</pointsize>
+               <pointsize>14</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
               </font>
              </property>
              <property name="styleSheet">
@@ -258,7 +310,7 @@
           </layout>
          </item>
          <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_11">
+          <layout class="QHBoxLayout" name="horizontalLayout_11" stretch="1,2,1">
            <item>
             <spacer name="horizontalSpacer_4">
              <property name="orientation">
@@ -277,7 +329,9 @@
              <property name="font">
               <font>
                <family>Segoe UI</family>
-               <pointsize>12</pointsize>
+               <pointsize>14</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
               </font>
              </property>
              <property name="styleSheet">
@@ -833,7 +887,41 @@ border-bottom-left-radius:0px;</string>
       </layout>
      </item>
      <item>
-      <layout class="QVBoxLayout" name="verticalLayout_3"/>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:white; border:2px solid #157492; border-radius:3px;
+</string>
+         </property>
+         <property name="text">
+          <string>DRY</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
      </item>
     </layout>
    </widget>
