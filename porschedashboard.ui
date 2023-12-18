@@ -266,7 +266,7 @@
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="1,1">
            <item>
-            <widget class="QLabel" name="label_3">
+            <widget class="QLabel" name="tc">
              <property name="font">
               <font>
                <family>Segoe UI</family>
@@ -325,7 +325,7 @@
             </spacer>
            </item>
            <item>
-            <widget class="QLabel" name="label_26">
+            <widget class="QLabel" name="abs">
              <property name="font">
               <font>
                <family>Segoe UI</family>

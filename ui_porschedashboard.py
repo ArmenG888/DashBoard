@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'porschedashboardXpNYxp.ui'
+## Form generated from reading UI file 'porschedashboardbAhxjk.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -161,18 +161,18 @@ class Ui_MainWindow(object):
         self.verticalLayout_15.setObjectName(u"verticalLayout_15")
         self.horizontalLayout_6 = QHBoxLayout()
         self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
-        self.label_3 = QLabel(self.horizontalLayoutWidget)
-        self.label_3.setObjectName(u"label_3")
+        self.tc = QLabel(self.horizontalLayoutWidget)
+        self.tc.setObjectName(u"tc")
         font3 = QFont()
         font3.setFamily(u"Segoe UI")
         font3.setPointSize(14)
         font3.setBold(True)
         font3.setWeight(75)
-        self.label_3.setFont(font3)
-        self.label_3.setStyleSheet(u"color:white; border: 2px solid red; border-radius:5px;")
-        self.label_3.setAlignment(Qt.AlignCenter)
+        self.tc.setFont(font3)
+        self.tc.setStyleSheet(u"color:white; border: 2px solid red; border-radius:5px;")
+        self.tc.setAlignment(Qt.AlignCenter)
 
-        self.horizontalLayout_6.addWidget(self.label_3)
+        self.horizontalLayout_6.addWidget(self.tc)
 
         self.label_4 = QLabel(self.horizontalLayoutWidget)
         self.label_4.setObjectName(u"label_4")
@@ -193,15 +193,15 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_11.addItem(self.horizontalSpacer_4)
 
-        self.label_26 = QLabel(self.horizontalLayoutWidget)
-        self.label_26.setObjectName(u"label_26")
-        self.label_26.setFont(font3)
-        self.label_26.setStyleSheet(u"color:white; border: 2px solid blue; border-radius:5px;\n"
+        self.abs = QLabel(self.horizontalLayoutWidget)
+        self.abs.setObjectName(u"abs")
+        self.abs.setFont(font3)
+        self.abs.setStyleSheet(u"color:white; border: 2px solid blue; border-radius:5px;\n"
 "padding-left:10px;\n"
 "padding-right:10px;")
-        self.label_26.setAlignment(Qt.AlignCenter)
+        self.abs.setAlignment(Qt.AlignCenter)
 
-        self.horizontalLayout_11.addWidget(self.label_26)
+        self.horizontalLayout_11.addWidget(self.abs)
 
         self.horizontalSpacer_3 = QSpacerItem(10, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
@@ -565,9 +565,9 @@ class Ui_MainWindow(object):
         self.fuelpress.setText(QCoreApplication.translate("MainWindow", u"5", None))
         self.label_22.setText(QCoreApplication.translate("MainWindow", u"Fuel Level", None))
         self.fuel_level.setText(QCoreApplication.translate("MainWindow", u"30", None))
-        self.label_3.setText(QCoreApplication.translate("MainWindow", u"TC-LA 4", None))
+        self.tc.setText(QCoreApplication.translate("MainWindow", u"TC-LA 4", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"TC-LO 0", None))
-        self.label_26.setText(QCoreApplication.translate("MainWindow", u"ABS 4", None))
+        self.abs.setText(QCoreApplication.translate("MainWindow", u"ABS 4", None))
         self.speed.setText(QCoreApplication.translate("MainWindow", u"100", None))
         self.gear.setText(QCoreApplication.translate("MainWindow", u"1", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"TIRE PRESS", None))

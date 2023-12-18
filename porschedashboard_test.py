@@ -15,11 +15,11 @@ class Main(QtWidgets.QMainWindow):
 		self.show()
 	def updateInfo(self):
 		gear = 'N'
-		speed,lap,fuel = 0,0,30
+		speed,lap,fuel,bb,abs,tc = 0,0,0,0,0,0
 		tire_pressures = [0,0,0,0]
 		last_update_time = 0
 		update_interval = 0.1
-
+		max_fuel = 0
 		while True:
 			current_time = time.time()
 			if current_time - last_update_time > update_interval:
@@ -33,21 +33,39 @@ class Main(QtWidgets.QMainWindow):
 								gear = 'N'
 							elif gear == -1:
 								gear = 'R'
+							self.ui.gear.setText(str(gear))
 						if data.get('speed') is not None and data.get('speed') != speed:
 							speed = round(data.get('speed')) 
 							self.ui.speed.setText(str(speed))
 						if data.get('tiresPressures') is not None and data.get('tiresPressures') != tire_pressures:
 							tire_pressures = data.get('tiresPressures')
-							self.ui.front_left.setText(f"{tire_pressures[0]:.0f} psi")
-							self.ui.front_right.setText(f"{tire_pressures[1]:.0f} psi")
-							self.ui.rear_left.setText(f"{tire_pressures[2]:.0f} psi")
-							self.ui.rear_right.setText(f"{tire_pressures[3]:.0f} psi")
+							self.ui.front_left.setText(f"{tire_pressures[0]:.00f} psi")
+							self.ui.front_right.setText(f"{tire_pressures[1]:.00f} psi")
+							self.ui.rear_left.setText(f"{tire_pressures[2]:.00f} psi")
+							self.ui.rear_right.setText(f"{tire_pressures[3]:.00f} psi")
 						if data.get('lap') is not None and data.get('lap') != lap:
 							lap = data.get('lap')
 							self.ui.lap.setText(str(lap))
+						if data.get('fuel') is not None and data.get('fuel') != fuel:
+							fuel = round(data.get('fuel'),1)
+							if fuel > max_fuel:
+								max_fuel = fuel
+							self.ui.fuel_level.setText(str(fuel))
+							fuel_used = round(max_fuel - fuel,1)
+							self.ui.fuel_used.setText(str(fuel_used))
+						if data.get('brakeBias') is not None and data.get('brakeBias') != bb:
+							bb = round(data.get('brakeBias')*100,1)
+							self.ui.brake_bias.setText(str(bb)+"%")
+						if data.get('tc') is not None and data.get('tc') != tc:
+							tc = round(data.get('tc'),1)
+							self.ui.tc.setText("TC-LA " + str(tc))
+						if data.get('abs') is not None and data.get('abs') != abs:
+							abs = round(data.get('abs'),1)
+							self.ui.abs.setText("ABS " + str(abs))
+						if data.get('currentTime') is not None:
+							current_laptime = data.get('currentTime')[:-1]
+							self.ui.current_laptime.setText(str(current_laptime))
 						
-						
-						self.ui.gear.setText(gear)
 						self.ui.speed.setText(str(speed))
 						
 
