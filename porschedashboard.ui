@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>810</width>
-    <height>329</height>
+    <height>328</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -96,7 +96,7 @@
              <property name="font">
               <font>
                <family>Segoe UI</family>
-               <pointsize>12</pointsize>
+               <pointsize>14</pointsize>
               </font>
              </property>
              <property name="cursor">
@@ -144,7 +144,7 @@
              <property name="font">
               <font>
                <family>Segoe UI</family>
-               <pointsize>12</pointsize>
+               <pointsize>14</pointsize>
               </font>
              </property>
              <property name="cursor">
@@ -192,7 +192,7 @@
              <property name="font">
               <font>
                <family>Segoe UI</family>
-               <pointsize>12</pointsize>
+               <pointsize>14</pointsize>
               </font>
              </property>
              <property name="cursor">
@@ -240,7 +240,7 @@
              <property name="font">
               <font>
                <family>Segoe UI</family>
-               <pointsize>12</pointsize>
+               <pointsize>14</pointsize>
               </font>
              </property>
              <property name="cursor">
@@ -546,12 +546,15 @@ padding-right:10px;</string>
       </layout>
      </item>
      <item>
-      <layout class="QVBoxLayout" name="verticalLayout_5" stretch="1,10,6">
+      <layout class="QVBoxLayout" name="verticalLayout_5" stretch="1,0,10,6">
        <property name="spacing">
         <number>2</number>
        </property>
        <item>
         <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
          <property name="topMargin">
           <number>7</number>
          </property>
@@ -615,7 +618,7 @@ padding-right:10px;
              <property name="font">
               <font>
                <family>Segoe UI</family>
-               <pointsize>12</pointsize>
+               <pointsize>13</pointsize>
               </font>
              </property>
              <property name="styleSheet">
@@ -665,6 +668,13 @@ padding-right:10px;
           </spacer>
          </item>
         </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
        </item>
        <item>
         <layout class="QVBoxLayout" name="verticalLayout_12" stretch="1,5,1,3">

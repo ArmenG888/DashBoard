@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'porschedashboardlrKQaR.ui'
+## Form generated from reading UI file 'porschedashboardXpNYxp.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -17,7 +17,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(810, 329)
+        MainWindow.resize(810, 328)
         MainWindow.setStyleSheet(u"background-color:#05070B;\n"
 "")
         self.centralwidget = QWidget(MainWindow)
@@ -61,6 +61,10 @@ class Ui_MainWindow(object):
         self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
         self.label_16 = QLabel(self.horizontalLayoutWidget)
         self.label_16.setObjectName(u"label_16")
+        font1 = QFont()
+        font1.setFamily(u"Segoe UI")
+        font1.setPointSize(12)
+        self.label_16.setFont(font1)
         self.label_16.setStyleSheet(u"color:white; background-color:#19353C;")
         self.label_16.setAlignment(Qt.AlignCenter)
 
@@ -68,6 +72,10 @@ class Ui_MainWindow(object):
 
         self.fuel_used = QLabel(self.horizontalLayoutWidget)
         self.fuel_used.setObjectName(u"fuel_used")
+        font2 = QFont()
+        font2.setFamily(u"Segoe UI")
+        font2.setPointSize(14)
+        self.fuel_used.setFont(font2)
         self.fuel_used.setCursor(QCursor(Qt.CrossCursor))
         self.fuel_used.setStyleSheet(u"border-right:3px solid #19353C; color:white; border-top:3px solid #19353C")
         self.fuel_used.setAlignment(Qt.AlignCenter)
@@ -82,6 +90,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_12.setObjectName(u"horizontalLayout_12")
         self.label_19 = QLabel(self.horizontalLayoutWidget)
         self.label_19.setObjectName(u"label_19")
+        self.label_19.setFont(font1)
         self.label_19.setStyleSheet(u"color:white; background-color:#19353C;")
         self.label_19.setAlignment(Qt.AlignCenter)
 
@@ -89,6 +98,7 @@ class Ui_MainWindow(object):
 
         self.fuelperlap = QLabel(self.horizontalLayoutWidget)
         self.fuelperlap.setObjectName(u"fuelperlap")
+        self.fuelperlap.setFont(font2)
         self.fuelperlap.setCursor(QCursor(Qt.CrossCursor))
         self.fuelperlap.setStyleSheet(u"border-right:3px solid #19353C; color:white;")
         self.fuelperlap.setAlignment(Qt.AlignCenter)
@@ -103,6 +113,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_13.setObjectName(u"horizontalLayout_13")
         self.label_20 = QLabel(self.horizontalLayoutWidget)
         self.label_20.setObjectName(u"label_20")
+        self.label_20.setFont(font1)
         self.label_20.setStyleSheet(u"color:white; background-color:#19353C;")
         self.label_20.setAlignment(Qt.AlignCenter)
 
@@ -110,6 +121,7 @@ class Ui_MainWindow(object):
 
         self.fuelpress = QLabel(self.horizontalLayoutWidget)
         self.fuelpress.setObjectName(u"fuelpress")
+        self.fuelpress.setFont(font2)
         self.fuelpress.setCursor(QCursor(Qt.CrossCursor))
         self.fuelpress.setStyleSheet(u"border-right:3px solid #19353C; color:white;")
         self.fuelpress.setAlignment(Qt.AlignCenter)
@@ -124,6 +136,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_14.setObjectName(u"horizontalLayout_14")
         self.label_22 = QLabel(self.horizontalLayoutWidget)
         self.label_22.setObjectName(u"label_22")
+        self.label_22.setFont(font1)
         self.label_22.setStyleSheet(u"color:white; background-color:#19353C;")
         self.label_22.setAlignment(Qt.AlignCenter)
 
@@ -131,6 +144,7 @@ class Ui_MainWindow(object):
 
         self.fuel_level = QLabel(self.horizontalLayoutWidget)
         self.fuel_level.setObjectName(u"fuel_level")
+        self.fuel_level.setFont(font2)
         self.fuel_level.setCursor(QCursor(Qt.CrossCursor))
         self.fuel_level.setStyleSheet(u"border-right:3px solid #19353C; color:white; border-bottom:3px solid  #19353C")
         self.fuel_level.setAlignment(Qt.AlignCenter)
@@ -149,10 +163,12 @@ class Ui_MainWindow(object):
         self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
         self.label_3 = QLabel(self.horizontalLayoutWidget)
         self.label_3.setObjectName(u"label_3")
-        font1 = QFont()
-        font1.setFamily(u"Segoe UI")
-        font1.setPointSize(12)
-        self.label_3.setFont(font1)
+        font3 = QFont()
+        font3.setFamily(u"Segoe UI")
+        font3.setPointSize(14)
+        font3.setBold(True)
+        font3.setWeight(75)
+        self.label_3.setFont(font3)
         self.label_3.setStyleSheet(u"color:white; border: 2px solid red; border-radius:5px;")
         self.label_3.setAlignment(Qt.AlignCenter)
 
@@ -160,12 +176,14 @@ class Ui_MainWindow(object):
 
         self.label_4 = QLabel(self.horizontalLayoutWidget)
         self.label_4.setObjectName(u"label_4")
-        self.label_4.setFont(font1)
+        self.label_4.setFont(font3)
         self.label_4.setStyleSheet(u"color:white; border: 2px solid green; border-radius:5px;")
         self.label_4.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_6.addWidget(self.label_4)
 
+        self.horizontalLayout_6.setStretch(0, 1)
+        self.horizontalLayout_6.setStretch(1, 1)
 
         self.verticalLayout_15.addLayout(self.horizontalLayout_6)
 
@@ -177,7 +195,7 @@ class Ui_MainWindow(object):
 
         self.label_26 = QLabel(self.horizontalLayoutWidget)
         self.label_26.setObjectName(u"label_26")
-        self.label_26.setFont(font1)
+        self.label_26.setFont(font3)
         self.label_26.setStyleSheet(u"color:white; border: 2px solid blue; border-radius:5px;\n"
 "padding-left:10px;\n"
 "padding-right:10px;")
@@ -189,6 +207,9 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_11.addItem(self.horizontalSpacer_3)
 
+        self.horizontalLayout_11.setStretch(0, 1)
+        self.horizontalLayout_11.setStretch(1, 2)
+        self.horizontalLayout_11.setStretch(2, 1)
 
         self.verticalLayout_15.addLayout(self.horizontalLayout_11)
 
@@ -223,10 +244,10 @@ class Ui_MainWindow(object):
         self.verticalLayout_18.setContentsMargins(-1, 0, -1, -1)
         self.gear = QLabel(self.horizontalLayoutWidget)
         self.gear.setObjectName(u"gear")
-        font2 = QFont()
-        font2.setFamily(u"Segoe UI")
-        font2.setPointSize(68)
-        self.gear.setFont(font2)
+        font4 = QFont()
+        font4.setFamily(u"Segoe UI")
+        font4.setPointSize(68)
+        self.gear.setFont(font4)
         self.gear.setStyleSheet(u"color:white; border:3px solid #19353C;border-radius:5px;")
         self.gear.setAlignment(Qt.AlignCenter)
 
@@ -253,10 +274,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_8.setObjectName(u"horizontalLayout_8")
         self.front_left = QLabel(self.horizontalLayoutWidget)
         self.front_left.setObjectName(u"front_left")
-        font3 = QFont()
-        font3.setFamily(u"Segoe UI")
-        font3.setPointSize(14)
-        self.front_left.setFont(font3)
+        self.front_left.setFont(font2)
         self.front_left.setStyleSheet(u"color:white; border-left: 3px solid #D4891A;")
         self.front_left.setAlignment(Qt.AlignCenter)
 
@@ -264,7 +282,7 @@ class Ui_MainWindow(object):
 
         self.front_right = QLabel(self.horizontalLayoutWidget)
         self.front_right.setObjectName(u"front_right")
-        self.front_right.setFont(font3)
+        self.front_right.setFont(font2)
         self.front_right.setStyleSheet(u"color:white; border-right: 3px solid #D4891A;")
         self.front_right.setAlignment(Qt.AlignCenter)
 
@@ -278,7 +296,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
         self.rear_left = QLabel(self.horizontalLayoutWidget)
         self.rear_left.setObjectName(u"rear_left")
-        self.rear_left.setFont(font3)
+        self.rear_left.setFont(font2)
         self.rear_left.setStyleSheet(u"color:white; border-left: 3px solid #D4891A; border-bottom: 3px solid #D4891A; ")
         self.rear_left.setAlignment(Qt.AlignCenter)
 
@@ -286,7 +304,7 @@ class Ui_MainWindow(object):
 
         self.rear_right = QLabel(self.horizontalLayoutWidget)
         self.rear_right.setObjectName(u"rear_right")
-        self.rear_right.setFont(font3)
+        self.rear_right.setFont(font2)
         self.rear_right.setStyleSheet(u"color:white; border-right: 3px solid #D4891A; border-bottom: 3px solid #D4891A;")
         self.rear_right.setAlignment(Qt.AlignCenter)
 
@@ -314,6 +332,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_5.setSpacing(2)
         self.verticalLayout_5.setObjectName(u"verticalLayout_5")
         self.verticalLayout_2 = QVBoxLayout()
+        self.verticalLayout_2.setSpacing(0)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.verticalLayout_2.setContentsMargins(-1, 7, -1, -1)
         self.verticalSpacer_3 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
@@ -329,10 +348,10 @@ class Ui_MainWindow(object):
 
         self.label = QLabel(self.horizontalLayoutWidget)
         self.label.setObjectName(u"label")
-        font4 = QFont()
-        font4.setFamily(u"Segoe UI")
-        font4.setPointSize(16)
-        self.label.setFont(font4)
+        font5 = QFont()
+        font5.setFamily(u"Segoe UI")
+        font5.setPointSize(16)
+        self.label.setFont(font5)
         self.label.setStyleSheet(u"color:white;background-color:#19353C; border-radius:5px;\n"
 "border-bottom-right-radius:0px;\n"
 "border-top-right-radius:0px;\n"
@@ -345,7 +364,10 @@ class Ui_MainWindow(object):
 
         self.lap_num = QLabel(self.horizontalLayoutWidget)
         self.lap_num.setObjectName(u"lap_num")
-        self.lap_num.setFont(font1)
+        font6 = QFont()
+        font6.setFamily(u"Segoe UI")
+        font6.setPointSize(13)
+        self.lap_num.setFont(font6)
         self.lap_num.setStyleSheet(u"\n"
 "\n"
 "color:white; border:3px solid #19353C; border-radius:5px;\n"
@@ -371,6 +393,11 @@ class Ui_MainWindow(object):
 
 
         self.verticalLayout_5.addLayout(self.verticalLayout_2)
+
+        self.label_6 = QLabel(self.horizontalLayoutWidget)
+        self.label_6.setObjectName(u"label_6")
+
+        self.verticalLayout_5.addWidget(self.label_6)
 
         self.verticalLayout_12 = QVBoxLayout()
         self.verticalLayout_12.setSpacing(0)
@@ -423,7 +450,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
         self.delta = QLabel(self.horizontalLayoutWidget)
         self.delta.setObjectName(u"delta")
-        self.delta.setFont(font4)
+        self.delta.setFont(font5)
         self.delta.setStyleSheet(u"color:white; border:3px solid #19353C;")
         self.delta.setAlignment(Qt.AlignCenter)
 
@@ -431,7 +458,7 @@ class Ui_MainWindow(object):
 
         self.prediction = QLabel(self.horizontalLayoutWidget)
         self.prediction.setObjectName(u"prediction")
-        self.prediction.setFont(font4)
+        self.prediction.setFont(font5)
         self.prediction.setStyleSheet(u"color:white; border:3px solid #19353C;")
         self.prediction.setAlignment(Qt.AlignCenter)
 
@@ -458,7 +485,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_15.setObjectName(u"horizontalLayout_15")
         self.label_24 = QLabel(self.horizontalLayoutWidget)
         self.label_24.setObjectName(u"label_24")
-        self.label_24.setFont(font4)
+        self.label_24.setFont(font5)
         self.label_24.setStyleSheet(u"color:white;background-color:#19353C; border-radius:5px;\n"
 "border-bottom-right-radius:0px;\n"
 "border-top-right-radius:0px;\n"
@@ -469,7 +496,7 @@ class Ui_MainWindow(object):
 
         self.brake_bias = QLabel(self.horizontalLayoutWidget)
         self.brake_bias.setObjectName(u"brake_bias")
-        self.brake_bias.setFont(font4)
+        self.brake_bias.setFont(font5)
         self.brake_bias.setStyleSheet(u"\n"
 "\n"
 "color:white; border:3px solid #19353C; border-radius:5px;\n"
@@ -489,13 +516,26 @@ class Ui_MainWindow(object):
         self.verticalLayout_5.addLayout(self.verticalLayout_11)
 
         self.verticalLayout_5.setStretch(0, 1)
-        self.verticalLayout_5.setStretch(1, 10)
-        self.verticalLayout_5.setStretch(2, 6)
+        self.verticalLayout_5.setStretch(2, 10)
+        self.verticalLayout_5.setStretch(3, 6)
 
         self.horizontalLayout.addLayout(self.verticalLayout_5)
 
         self.verticalLayout_3 = QVBoxLayout()
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.label_5 = QLabel(self.horizontalLayoutWidget)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setFont(font2)
+        self.label_5.setStyleSheet(u"color:white; border:2px solid #157492; border-radius:3px;\n"
+"")
+        self.label_5.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_3.addWidget(self.label_5)
+
+        self.verticalSpacer_5 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer_5)
+
 
         self.horizontalLayout.addLayout(self.verticalLayout_3)
 
@@ -537,6 +577,7 @@ class Ui_MainWindow(object):
         self.rear_right.setText(QCoreApplication.translate("MainWindow", u"21.49", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Lap", None))
         self.lap_num.setText(QCoreApplication.translate("MainWindow", u"1", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.label_9.setText(QCoreApplication.translate("MainWindow", u"Laptime", None))
         self.current_laptime.setText(QCoreApplication.translate("MainWindow", u"0:00:00", None))
         self.label_11.setText(QCoreApplication.translate("MainWindow", u"Time. Diff", None))
@@ -545,5 +586,6 @@ class Ui_MainWindow(object):
         self.prediction.setText(QCoreApplication.translate("MainWindow", u"0:00:00", None))
         self.label_24.setText(QCoreApplication.translate("MainWindow", u"Brakes Bias", None))
         self.brake_bias.setText(QCoreApplication.translate("MainWindow", u"50%", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"DRY", None))
     # retranslateUi
 
