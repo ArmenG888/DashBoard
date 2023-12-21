@@ -4,6 +4,9 @@ import ac
 import acsys 
 import os
 import json
+from third_party.sim_info import info
+from third_party.util import *
+
 
 l_lapcount=0
 lapcount=0
@@ -42,6 +45,12 @@ def acUpdate(deltaT):
 		'speed':ac.getCarState(0, acsys.CS.SpeedKMH),
 		'tiresTemp':ac.getCarState(0, acsys.CS.CurrentTyresCoreTemp),
 		'tiresPressures':ac.getCarState(0, acsys.CS.DynamicPressure),
+		'fuel':info.physics.fuel,
+		'lap':ac.getCarState(0, acsys.CS.LapCount),
+		'brakeBias': info.physics.brakeBias,
+		'tc': info.physics.tc,
+		'abs': info.physics.abs,
+		'currentTime':info.graphics.currentTime,
 		
 	}
 	w = open("C:/Users/armen/Documents/Github/DashBoard/test.txt", "w+")
