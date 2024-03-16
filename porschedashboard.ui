@@ -870,10 +870,14 @@ border-top-right-radius:0px;
 
 color:white; border:3px solid #19353C; border-radius:5px;
 border-top-left-radius:0px;
-border-bottom-left-radius:0px;</string>
+border-bottom-left-radius:0px;
+text-align:center;</string>
              </property>
              <property name="text">
               <string>50%</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
