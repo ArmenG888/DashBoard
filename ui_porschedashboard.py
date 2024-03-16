@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'porschedashboardTvbCZo.ui'
+## Form generated from reading UI file 'porschedashboardvUEEqz.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -501,7 +501,9 @@ class Ui_MainWindow(object):
 "\n"
 "color:white; border:3px solid #19353C; border-radius:5px;\n"
 "border-top-left-radius:0px;\n"
-"border-bottom-left-radius:0px;")
+"border-bottom-left-radius:0px;\n"
+"text-align:center;")
+        self.brake_bias.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_15.addWidget(self.brake_bias)
 
